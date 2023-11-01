@@ -1,0 +1,130 @@
+{% comment %} {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('{% static 'rumah.jpg'%}');;
+        }        
+        .container {
+            text-align: center;
+            margin-top: 150px;
+            background-color: white;
+            opacity: 50%;
+        }
+        h2 {
+            margin-left: 500px;
+            margin-right: 500px;
+            text-align: center;
+            margin-top: 150px;
+            background-color: white;
+            font-size: 40px;
+            color: #343a40;
+
+            
+        }
+        h1 {
+            margin-left: 300px;
+            margin-right: 300px;
+            text-align: center;
+            margin-top: 50px;
+            background-color: white;
+            font-size: 60px;
+            color: #343a40;
+        }
+        input[type="submit"] {
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            padding: 16px 32px;
+            border: none;
+            font-size: 18px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body> {% endcomment %}
+    {% comment %} <img src="{% static 'rumah.jpg'%}"/> {% endcomment %}
+    {% comment %} <div class="container">
+    </div>
+    <h2>SELAMAT DATANG</h2>
+    <h1>HALAMAN AWAL PREDIKSI</h1>
+    <form action="predik">
+        <input type="submit" value="MULAI">
+    </form>
+</body>
+</html> {% endcomment %}
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('{% static 'rumah.jpg'%}');
+        }
+        
+        .container {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        h2, h1 {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #343a40;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #343a40;
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            font-weight: bold;
+            text-align: center;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 16px 32px;
+            border: none;
+            font-size: 18px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <h2>SELAMAT DATANG</h2>
+        <h1>HALAMAN AWAL ESTIMASI RUMAH</h1>
+        <form action="predik">
+            <input type="submit" value="MULAI">
+        </form>
+    </div>
+</body>
+</html>
